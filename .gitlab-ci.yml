@@ -3,7 +3,7 @@ stages:
 
 coba: 
   stage: deploy 
-  image: ubuntu:20.04
+  image: eeacms/scp-server
   script:
-    - rsync index.html root@47.254.249.194:/var/www/html 
+    - scp index.html root@47.254.249.194:/var/www/html 
 
