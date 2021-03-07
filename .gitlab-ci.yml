@@ -3,7 +3,7 @@ stages:
 
 coba: 
   stage: deploy 
-  image: debian:latest 
+  image: ubuntu:20.04
   script:
     - scp index.html root@47.254.249.194:/var/www/html 
 
